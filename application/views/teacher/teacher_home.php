@@ -1,3 +1,9 @@
+<?php
+$user = $this->session->userdata('teacher');
+extract($user);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +13,25 @@
 </head>
 <body>
 <div class="container">
-	<h1 class="page-header text-center">CodeIgniter Login with Flashdata Teacher</h1>
+	<section class="menu cid-qyXaCrsen3" once="menu" id="menu3-3n" data-rv-view="3209">
+		    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		        <div class="navbar-brand">            
+		            <span class="navbar-caption-wrap text-white">
+		                    Welcome <?php echo $fname; ?>
+		            </span>
+		        </div>        
+		      	<div class="collapse navbar-collapse" id="navbarSupportedContent">            
+		            <div class="icons-menu">
+		              	<a class="btn btn-sm btn-white-outline display-4" href="<?php echo base_url(); ?>teacher/myStud">My Students</a>
+
+		                <a class="btn btn-sm btn-white-outline display-4" href="<?php echo base_url(); ?>teacher/teacher/logout">Logout</a>
+		              
+		         </div>
+		            
+		      </div>
+		    </nav>
+    </section>
+	<!-- <h1 class="page-header text-center">CodeIgniter Login with Flashdata Teacher</h1>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			<?php
@@ -21,7 +45,7 @@
 			<p>Password: <?php echo $password; ?></p>
 			<a href="<?php echo base_url(); ?>teacher/teacher/logout" class="btn btn-danger">Logout</a>
 		</div>
-	</div>
+	</div> -->
 </div>
 </body>
 </html>

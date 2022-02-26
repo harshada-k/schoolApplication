@@ -57,7 +57,11 @@ $route['home'] = 'user/home';
 /* Routes for teacher */
 $route['teacher'] = 'teacher/teacher';
 $route['teacher/teacher_home'] = 'teacher/teacher/teacher_home';
-
+$route['teacher/myStud'] = 'teacher/students';
+$route['teacher/addStud'] = 'teacher/students/addStudent';
+$route['teacher/editStud/(:num)'] = 'teacher/students/editStudent/$1';
+$route['teacher/deleteStud/(:num)'] = 'teacher/students/deleteStud/$1';
+$route['teacher/getTeachers'] = 'teacher/getTeachers';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
